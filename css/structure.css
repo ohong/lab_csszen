@@ -1,0 +1,41 @@
+body { 
+    font-size: 100%;
+}
+
+div { 
+    border: thin red solid;
+    margin: 1em;
+}
+
+[id]:before {
+    content: attr(id) ": ";
+}
+
+[class]:before { 
+    border: thin black dotted; 
+    content: attr(class) ": ";
+}
+
+p span { 
+    display: none;
+}
+
+#preamble:hover p span { 
+    display: inline;
+}
+
+#quickSummary:hover p span { 
+    display: inline;
+}
+
+span:before { 
+    content: "<span>"; 
+    color: white; 
+    background-color: blue;
+}
+
+span:after { 
+    content: "</span>"; 
+    color: white; 
+    background-color: blue;
+}
